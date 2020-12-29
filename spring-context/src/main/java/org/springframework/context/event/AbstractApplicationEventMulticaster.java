@@ -364,6 +364,7 @@ public abstract class AbstractApplicationEventMulticaster
 
 	/**
 	 * Cache key for ListenerRetrievers, based on event type and source type.
+	 * 通过EventType（Event类）和SourceType确定一个事件
 	 */
 	private static final class ListenerCacheKey implements Comparable<ListenerCacheKey> {
 

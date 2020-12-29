@@ -49,9 +49,11 @@ import org.springframework.util.ErrorHandler;
  */
 public class SimpleApplicationEventMulticaster extends AbstractApplicationEventMulticaster {
 
+	// 异步处理线程池
 	@Nullable
 	private Executor taskExecutor;
 
+	// 异常处理器
 	@Nullable
 	private ErrorHandler errorHandler;
 
